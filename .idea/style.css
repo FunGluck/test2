@@ -1,0 +1,12 @@
+.hood {
+    margin: 0 auto;
+    background-color: #5841ff;
+    border: 10px solid #5841ff;
+    border-radius: 5px; width: 50%;
+    vertical-align: auto;
+    box-shadow: 4px 5px 5px black;
+}
+.alotext {
+    text-align: center;
+    font-family: Inter, sans-serif;
+}
