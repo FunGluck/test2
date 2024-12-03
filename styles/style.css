@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: #0D0D11;
+    background-size: 100% 100%;
+    background: linear-gradient(to bottom, #0D0D11 10%, #2e0854 60%, #4b0082 100%) no-repeat;
+    height: 100vh;
 }
 
 header {
@@ -14,10 +17,13 @@ header {
     align-items: center;
     padding: 20px 30px;
 }
+main {
+    position: relative;
+}
 
 
 .logo img {
-    height: 40px;
+    height: 64px;
 }
 
 .menu {
@@ -27,7 +33,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-decoration: none;
-    height: 30px;
+    height: 50px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -37,7 +43,7 @@ header {
 
 .menu-item {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 32px;
     color: #4B4B57;
     transition: border-bottom 0.15s linear, color 0.15s linear;
 }
@@ -45,4 +51,67 @@ header {
 .menu-item:hover {
     color: #737382;
     border-bottom: 2px solid #737382;
+}
+.main-text {
+    position: absolute;
+    left: 97px;
+    top: 438px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+.auto-generated-text {
+    color: #839CD2;
+    width: 637px;
+    height: 79px;
+}
+
+.underimg-elipse {
+    position: absolute;
+    width: 459px;
+    height: 576px;
+    left: 1168px;
+    top: 252px;
+    background: #1E1E25;
+    box-shadow: -14px 14px 7.6px rgba(31, 30, 37, 0.17);
+    border-radius: 110px;
+}
+.character {
+    position: absolute;
+    width: 388px;
+    height: 627px;
+    left: 1225px;
+    top: 201px;
+}
+.elipse {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #0070A8 30%, #7B02A4 100%) no-repeat;
+    filter: blur(10px);
+    transform: rotate(-27deg);
+}
+.skills-introduce {
+    display: flex;
+    position: absolute;
+    margin-top: 800px;
+    justify-content: center;
+    width: 382px;
+    height: 169px;
+    background: #B181FF;
+    opacity: 3%;
+}
+.git-img {
+    height: 150px;
+    width: 138px;
+}
+.github-img {
+    height: 150px;
+    width: 159px;
+}
+.git-skill-text {
+    text-wrap: normal;
+
 }
