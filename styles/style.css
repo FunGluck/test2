@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
+    width: 1920px;
     background-size: 100% 100%;
     background: linear-gradient(to bottom, #0D0D11 10%, #2e0854 60%, #4b0082 100%) no-repeat;
-    height: 100vh;
+    height: 5000px;
 }
 
 header {
@@ -19,6 +21,7 @@ header {
 }
 main {
     position: relative;
+    width: 100%;
 }
 
 
@@ -62,6 +65,11 @@ main {
     line-height: 56px;
     color: #FFFFFF;
 }
+.cover {
+    width: 100%;
+    height: 800px;
+    /*border: 50px solid #7B02A4;*/
+}
 .auto-generated-text {
     color: #839CD2;
     width: 637px;
@@ -94,22 +102,36 @@ main {
     transform: rotate(-27deg);
 }
 .skills-introduce {
-    display: flex;
-    position: absolute;
-    margin-top: 800px;
-    justify-content: center;
-    width: 382px;
-    height: 169px;
-    background: #B181FF;
-    opacity: 3%;
+    /*position: relative;*/
+    /*top: 946px;*/
+    /*left: 400px;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    /*width: 382px;*/
+    /*height: 169px;*/
+    /*background: #ffffff;*/
+    /*opacity: 3%;*/
+    /*!*#B181FF*!*/
+    /*border-radius: 59px;*/
+    /*position: absolute;*/
+    /*width: 382px;*/
+    /*height: 169px;*/
+    /*left: 769px;*/
+    /*top: 946px;*/
+
+    /*filter: drop-shadow(-18px 11px 32px rgba(0, 0, 0, 0.25));*/
 }
-.git-img {
-    height: 150px;
-    width: 138px;
-}
-.github-img {
-    height: 150px;
-    width: 159px;
+
+.skills-introduce p {
+    /*color: black;*/
+    /*width: 248px;*/
+    /*height: 75px;*/
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*font-size: 64px;*/
+    /*line-height: 75px;*/
+    /*text-align: center;*/
 }
 .git-skill-text {
     text-wrap: normal;
