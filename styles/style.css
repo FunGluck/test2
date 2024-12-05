@@ -56,19 +56,19 @@ main {
     border-bottom: 2px solid #737382;
 }
 .main-text {
-    position: absolute;
-    left: 97px;
-    top: 438px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 48px;
     line-height: 56px;
     color: #FFFFFF;
+
 }
 .cover {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 800px;
-    /*border: 50px solid #7B02A4;*/
+    height: 1000px;
 }
 .auto-generated-text {
     color: #839CD2;
@@ -77,22 +77,23 @@ main {
 }
 
 .underimg-elipse {
-    position: absolute;
     width: 459px;
     height: 576px;
-    left: 1168px;
-    top: 252px;
     background: #1E1E25;
     box-shadow: -14px 14px 7.6px rgba(31, 30, 37, 0.17);
     border-radius: 110px;
 }
 .character {
-    position: absolute;
-    width: 388px;
-    height: 627px;
-    left: 1225px;
-    top: 201px;
+    width: 459px;
+    height: 576px;
+
 }
+.img-char {
+    position: relative;
+    top: -55px;
+    left: 50px;
+}
+
 .elipse {
     width: 256px;
     height: 256px;
@@ -101,38 +102,29 @@ main {
     filter: blur(10px);
     transform: rotate(-27deg);
 }
-.skills-introduce {
-    /*position: relative;*/
-    /*top: 946px;*/
-    /*left: 400px;*/
-    /*display: flex;*/
-    /*margin: 0 auto;*/
-    /*width: 382px;*/
-    /*height: 169px;*/
-    /*background: #ffffff;*/
-    /*opacity: 3%;*/
-    /*!*#B181FF*!*/
-    /*border-radius: 59px;*/
-    /*position: absolute;*/
-    /*width: 382px;*/
-    /*height: 169px;*/
-    /*left: 769px;*/
-    /*top: 946px;*/
 
-    /*filter: drop-shadow(-18px 11px 32px rgba(0, 0, 0, 0.25));*/
+.skills-introduce {
+    display: flex;
+    margin: 0 auto;
+    width: 382px;
+    height: 169px;
+    background: #B181FF;
+    align-items: center;
+    justify-content: center;
+    /*opacity: 3%;*/
+    border-radius: 59px;
 }
 
 .skills-introduce p {
-    /*color: black;*/
-    /*width: 248px;*/
-    /*height: 75px;*/
-    /*font-family: 'Roboto';*/
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
-    /*font-size: 64px;*/
-    /*line-height: 75px;*/
-    /*text-align: center;*/
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+
 }
+
 .git-skill-text {
     text-wrap: normal;
 
