@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 body {
-    width: 1920px;
     background-size: 100% 100%;
     background: linear-gradient(to bottom, #0D0D11 10%, #2e0854 60%, #4b0082 100%) no-repeat;
     height: 5000px;
@@ -127,5 +126,21 @@ main {
 
 .git-skill-text {
     text-wrap: normal;
-
+}
+.Box {
+    box-sizing: border-box;
+    margin: 3em;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #FFE798, #D62053) border-box;
+    border-radius: 30px;
+    border: 10px solid transparent;
+    opacity: 3;
+}
+.skills {
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr;
+    grid-template-columns: 33% 33% 33%;
+    height: 1600px;
+    padding: 100px;
+    box-sizing: border-box;
 }
