@@ -127,20 +127,42 @@ main {
 .git-skill-text {
     text-wrap: normal;
 }
-.Box {
-    box-sizing: border-box;
-    margin: 3em;
-    background: linear-gradient(white, white) padding-box,
-    linear-gradient(to bottom, #FFE798, #D62053) border-box;
-    border-radius: 30px;
-    border: 10px solid transparent;
-    opacity: 3;
+box {
+    background-color: transparent; /* Прозрачный фон внутри карточки */
+    border: 5px solid transparent; /* Сначала прозрачная граница */
+    padding: 20px;
+    color: #333; /* Цвет текста */
+    text-align: center;
+    position: relative; /* Для правильного позиционирования контента */
+
+
+    /* Градиентная граница */
+    border-image: linear-gradient(45deg, #5fbaff, #580a6b) 30; /* Градиент для границы */
+    border-width: 10px;
+    z-index: 0; /* Для контроля над слоями */
+    /* mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude; */
+    border-radius: 36px;
 }
-.skills {
-    display: grid;
-    grid-template-rows: 1.5fr 1.5fr;
-    grid-template-columns: 33% 33% 33%;
-    height: 1600px;
-    padding: 100px;
-    box-sizing: border-box;
+
+.box::before {
+    position: absolute;
+    top: -10px; left: -10px; /* Смещаем псевдоэлемент на толщину границы */
+    right: -10px; bottom: -10px; /* Смещаем по всем сторонам */
+    background: linear-gradient(45deg, #5fbaff, #580a6b) 30;
+    z-index: -1; /* Размещаем псевдоэлемент за карточкой */
+    content: '';
+    border-radius: 36px;
+    border-width: 10px;
+    /* mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude; */
+}
+
+.skills p:not(:first-child) {
+    z-index: 1;
+    color: #333;
 }
