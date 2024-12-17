@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-size: 100% 100%;
     background: linear-gradient(to bottom, #0D0D11 10%, #2e0854 60%, #4b0082 100%) no-repeat;
@@ -121,48 +124,81 @@ main {
     font-size: 64px;
     line-height: 75px;
     text-align: center;
-
 }
 
 .git-skill-text {
     text-wrap: normal;
 }
-box {
-    background-color: transparent; /* Прозрачный фон внутри карточки */
-    border: 5px solid transparent; /* Сначала прозрачная граница */
-    padding: 20px;
-    color: #333; /* Цвет текста */
-    text-align: center;
-    position: relative; /* Для правильного позиционирования контента */
 
+
+.skills {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1.5fr 1.5fr;
+    height: 1600px;
+    gap: 40px;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.Box {
+    background-color: transparent;
+    border: 5px solid transparent;
+    padding: 2px;
+    text-align: center;
+    position: relative;
 
     /* Градиентная граница */
-    border-image: linear-gradient(45deg, #5fbaff, #580a6b) 30; /* Градиент для границы */
-    border-width: 10px;
-    z-index: 0; /* Для контроля над слоями */
-    /* mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    mask-composite: exclude; */
-    border-radius: 36px;
-}
+    /* border-image: linear-gradient(45deg, #5fbaff, #580a6b) 30; */
+    border-width: 2px;
+    z-index: 0;
+    border-radius: 30px;
 
-.box::before {
-    position: absolute;
-    top: -10px; left: -10px; /* Смещаем псевдоэлемент на толщину границы */
-    right: -10px; bottom: -10px; /* Смещаем по всем сторонам */
-    background: linear-gradient(45deg, #5fbaff, #580a6b) 30;
-    z-index: -1; /* Размещаем псевдоэлемент за карточкой */
-    content: '';
-    border-radius: 36px;
-    border-width: 10px;
-    /* mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    mask-composite: exclude; */
+    border: double 1em transparent;
+    background-image: linear-gradient(#190B29, #230A3E),
+    linear-gradient(to right,  #5fbaff, #580a6b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
-
 .skills p:not(:first-child) {
     z-index: 1;
     color: #333;
 }
+.projects-introduce {
+    display: flex;
+    margin: 0 auto;
+    width: 382px;
+    height: 169px;
+    background: #B181FF;
+    align-items: center;
+    justify-content: center;
+    /*opacity: 3%;*/
+    border-radius: 59px;
+}
+.projects-introduce p {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+}
+.Relaxation-Zone {
+    width: 808px;
+    height: 674px;
+    margin-top: 105px;
+    margin-left: 42px;
+}
+.test-server {
+    width: 808px;
+    height: 674px;
+    margin-top: 211px;
+    margin-left: 1069px;
+}
+.skills-text {
+
+}
+
