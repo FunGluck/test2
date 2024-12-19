@@ -144,7 +144,7 @@ main {
     box-sizing: border-box;
 }
 .skills-text {
-    display: flex;
+    display: inline-block;
     color: #FFFFFF;
     width: 329px;
     height: 83px;
@@ -242,9 +242,47 @@ main {
     text-align: center;
     color: #FFFFFF;
 }
+hr {
+    height: 3px;
+    background-color: #4B4B57;
+    border: none;
+    text-align: center;
+}
+
 footer {
     margin-top: 10vh;
     background: #35055e;
-    height: 30vh;
+    height: 32vh;
 }
-
+.footer-text {
+    font-family: 'Righteous', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #737382;
+}
+.header-footer {
+    font-family: 'Righteous', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #737382;
+}
+.footer-text-all {
+    padding-left: 7vw;
+    padding-top: 2vh;
+}
+.contacts {
+    padding-bottom: 3vh;
+}
+.purpose {
+    padding-bottom: 3vh;
+}
+.note {
+    padding-bottom: 1.5vh;
+}
+.copyright {
+    padding-top: 1.5vh;
+}
