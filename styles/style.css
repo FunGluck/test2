@@ -167,18 +167,39 @@ main {
 }
 .Box {
     background-color: transparent;
-    padding: 2px;
     text-align: center;
     position: relative;
     z-index: 0;
     border-radius: 30px;
-
+    padding: 3vh 2px 2px;
     border: double 1em transparent;
     background-image: linear-gradient(#190B29, #230A3E),
-    linear-gradient(to bottom,  #FFE798, #D62053);
+    linear-gradient(to bottom,  #c344cc, #5470f3);
     background-origin: border-box;
     background-clip: content-box, border-box;
     filter: drop-shadow(-23px 15px 20.9px rgba(0, 0, 0, 0.25));
+}
+.window {
+    position: absolute;
+    top: 0.1px;
+    left: 87.5%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #190B29;
+    border-top-width: 5px;
+}
+.minus {
+    position: absolute;
+    width: 20px;
+    top: 0.1px;
+    left: 80%;
+
+}
+.x {
+    position: absolute;
+    width: 20px;
+    top: 0.1px;
+    left: 95%;
 }
 .blue {
     background-image: linear-gradient(#190B29, #230A3E),
@@ -244,23 +265,23 @@ main {
 }
 hr {
     height: 3px;
-    background-color: #4B4B57;
+    background-color: #3f016c;
     border: none;
     text-align: center;
 }
 
 footer {
     margin-top: 10vh;
-    background: #35055e;
+    background: #1E1E25;
     height: 32vh;
 }
 .footer-text {
     font-family: 'Righteous', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 18px;
     line-height: 25px;
-    color: #737382;
+    color: #bfb9c0;
 }
 .header-footer {
     font-family: 'Righteous', sans-serif;
