@@ -273,7 +273,7 @@ hr {
 footer {
     margin-top: 10vh;
     background: #1E1E25;
-    height: 32vh;
+    height: 35vh;
 }
 .footer-text {
     font-family: 'Righteous', sans-serif;
@@ -297,6 +297,9 @@ footer {
 }
 .contacts {
     padding-bottom: 3vh;
+}
+span {
+    text-decoration: none;
 }
 .purpose {
     padding-bottom: 3vh;

@@ -1,5 +1,6 @@
 const textendsymbol = "|";
-const textMassive = ["Работает - не трогай", "Центр Комфорта - город счастья", "Когда ЗП?", "#FreeQuaks", "ChatGPT, помоги...", "/me протянул руку"];
+const textMassive = ["Работает - не трогай", "Центр Комфорта - город счастья", "Когда ЗП?", "#FreeQuaks", "ChatGPT, помоги...",
+    "/me протянул руку", "Лишь потеряв всё, мы обретём свободу", "Когда? Завтра"];
 const textBlock = document.querySelector(".auto-generated-text");
 let i = 0;
 let currentText = "";
@@ -40,6 +41,14 @@ function setCursorBlinking() {
 
 const typingInterval = setInterval(typeText, 70); // задержка 70 мс между символами
 
+// perspective dependancy
+// document.addEventListener('mousemove', function(e) {
+ //   let dx = e.pageX - window.innerWidth / 2
+   // let dy = e.pageY - window.innerHeight / 2
+    //let angleX = 20 * dx / window.innerWidth / 2
+    //let angleY = 20 * dy / window.innerHeight / 2
+    //block.style.transform = `rotateX(${angleY}deg) rotateY(${angleX}deg)`
+//})
 
 
 
